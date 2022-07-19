@@ -1,0 +1,4 @@
+public static string GetCustomStorageTableName(this FormIdentity formIdentity)
+{
+        return $"{Constants.StoreNamePrefix}{formIdentity?.Guid}".Replace('-', '_');
+}
